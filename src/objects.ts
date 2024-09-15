@@ -94,6 +94,7 @@ export function toMarkdown(question: Question): string {
     const options = questionCopy.options;
     let marked = `# ${name}\n${body}`;
     if (questionCopy.type === "multiple_choice_question") {
+        //for each option in [options] it adds a new line followed by the option to 'marked'
         options.forEach((option) => {
             marked += `\n- ${option}`;
         });
