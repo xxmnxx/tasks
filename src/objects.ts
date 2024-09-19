@@ -157,6 +157,7 @@ export function addOption(question: Question, newOption: string): Question {
     };
 
     return questionCopy;
+
 }
 
 /**
