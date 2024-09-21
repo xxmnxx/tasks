@@ -1,6 +1,6 @@
 import { Answer } from "./interfaces/answer";
 import { Question, QuestionType } from "./interfaces/question";
-import { duplicateQuestion, makeBlankQuestion } from "./objects";
+
 
 /**
  * Consumes an array of questions and returns a new array with only the questions
@@ -11,6 +11,7 @@ export function getPublishedQuestions(questions: Question[]): Question[] {
         (question: Question): boolean => question.published,
     );
     return publishedArrays;
+
 }
 
 /**
@@ -91,6 +92,7 @@ export function sumPublishedPoints(questions: Question[]): number {
         0,
     );
     return summed;
+
 }
 
 /***

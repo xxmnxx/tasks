@@ -37,6 +37,7 @@ export function isCorrect(question: Question, answer: string): boolean {
     const lowerExpected = trimmedExpected.toLowerCase();
 
     return lower === lowerExpected;
+
 }
 
 /**
@@ -126,6 +127,7 @@ export function publishQuestion(question: Question): Question {
         questionCopy.published = true;
     }
     return questionCopy;
+
 }
 
 /**
@@ -141,6 +143,7 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
     questionCopy.name = `Copy of ${name}`;
     questionCopy.published = false;
     return questionCopy;
+
 }
 
 /**
