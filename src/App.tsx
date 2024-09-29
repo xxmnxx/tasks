@@ -19,7 +19,7 @@ function App(): React.JSX.Element {
                 UD CISC275 with React Hooks and TypeScript Morgan Nutto
             </header>
             <hr></hr>
-            {/* <DoubleHalf></DoubleHalf> */}
+            { <DoubleHalf></DoubleHalf> }
             <hr></hr>
             <ChooseTeam></ChooseTeam>
             <hr></hr>
@@ -44,24 +44,3 @@ function App(): React.JSX.Element {
 
 export default App;
 
-/*function App(): React.JSX.Element {
-    return (
-        <div className="App">
-            <header className="App-header">
-                UD CISC275 with React Hooks and TypeScript Morgan Nutto
-            </header>
-            <hr></hr>
-            <Counter></Counter>
-            <hr />
-            <RevealAnswer></RevealAnswer>
-            <hr />
-            <StartAttempt></StartAttempt>
-            <hr />
-            <TwoDice></TwoDice>
-            <hr />
-            <ChangeType></ChangeType>
-            <hr />
-            <CycleHoliday></CycleHoliday>
-        </div>
-    );
-}*/
